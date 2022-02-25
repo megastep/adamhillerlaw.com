@@ -26,7 +26,11 @@
       color: darken($primary, 10%);
     }
     .law-title {
-      color: #808285;
+      padding-left: 15px;
+      padding-top: 6px;
+      &-name {
+        color: #808285;
+      }
     }
   }
   .navbar-nav {
@@ -46,10 +50,11 @@
     }
   }
 }
+.navbar-brand {
+  display: flex;
+}
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
