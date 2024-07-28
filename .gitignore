@@ -4,6 +4,5 @@
 .jekyll-cache
 .ruby-version
 _site
-Gemfile.lock
 unused
 bootstrap-reference.html
