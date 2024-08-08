@@ -49,34 +49,5 @@
   <link href="/assets/css/agency.css" rel="stylesheet" />
   
   {% seo %}
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "{{ site.title }}",
-    "image": "{{ site.url }}/{{ site.logo }}",
-    "@id": "{{ site.url }}",
-    "url": "{{ site.url }}",
-    "telephone": "{{ site.contact.phone }}",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "{{ site.contact.address.street }}",
-      "addressLocality": "{{ site.contact.address.city }}",
-      "addressRegion": "{{ site.contact.address.region }}",
-      "postalCode": "{{ site.contact.address.postalCode }}",
-      "addressCountry": "{{ site.contact.address.country }}"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": {{ site.geoloc.coordinates.lat }},
-      "longitude": {{ site.geoloc.coordinates.long }}
-    },
-    "priceRange": "$$",
-    "openingHours": [
-      "Mo-Fr 09:00-17:00"
-    ]
-  }
-  </script>
-
+  {% include jsonld.html %}
 </head>
