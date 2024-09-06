@@ -8,4 +8,7 @@ gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
 gem 'jekyll-redirect-from'
 gem 'webrick'
+gem 'base64'
+gem 'csv'
+gem 'bigdecimal'
 

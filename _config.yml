@@ -18,6 +18,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Hiller Law, LLC
 email      : ahiller@adamhillerlaw.com
+tagline    : "Law practice in Wilmington, Delaware"
 description: "A solo law practice owned and operated by Adam Hiller, Esquire in Wilmington, Delaware"
 author     : Adam Hiller
 logo       : assets/img/logo.png
@@ -36,6 +37,16 @@ geoloc:
     lat: -75.543002
   region: US-DE
   placename: Wilmington
+
+contact:
+  address:
+    street: "300 Delaware Avenue, Suite 210, #227"
+    city: Wilmington
+    region: DE
+    postalCode: 19801
+    country: US
+  phone: "+1 (302) 442-7677"
+  email: ahiller@adamhillerlaw.com
 
 collections:
   portfolio:
