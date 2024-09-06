@@ -1,6 +1,7 @@
 ---
 layout: null
-permalink: _headers
+permalink: /_headers
+sitemap: false
 ---
 /*
     X-Content-Type-Options: nosniff

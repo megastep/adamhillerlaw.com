@@ -15,13 +15,14 @@
 
 url    : "https://adamhillerlaw.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+imgprefix: ""  # Used for Cloudflare image resizing, leave blank in dev
 
 title      : Hiller Law, LLC
 email      : ahiller@adamhillerlaw.com
 tagline    : "Law practice in Wilmington, Delaware"
 description: "A solo law practice owned and operated by Adam Hiller, Esquire in Wilmington, Delaware"
 author     : Adam Hiller
-logo       : assets/img/logo.png
+logo       : /assets/img/logo.png
 designer   : Catloaf Software, LLC
 designlink : https://www.catloafsoft.com/
 # logo:     #optional, defaults to site title

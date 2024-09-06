@@ -6,7 +6,7 @@
           {% include logo.svg %}
           <span class="law-title">Hiller&nbsp;<span class="law-title-name">Law</span></span>
         {%- else if site.logo -%}
-          <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
+          <img height="{{ site.logo.height | default: 52 }}" src="{{ site.imgprefix }}{{ site.logo.path }}"/>
         {%- endif -%}
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
