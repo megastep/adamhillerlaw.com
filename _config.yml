@@ -72,5 +72,6 @@ exclude: [
   EDITING.md,
   screenshot.PNG,
   tutorial,
+  seo,
   jekyll-agency.gemspec
 ]
