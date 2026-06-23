@@ -1,0 +1,24 @@
+@ 10800 IN SOA ns1.gandi.net. hostmaster.gandi.net. 1704232183 10800 3600 604800 10800
+* 3600 IN TXT "v=spf1 -all"
+@ 3600 IN A 185.199.108.153
+@ 3600 IN A 185.199.109.153
+@ 3600 IN A 185.199.110.153
+@ 3600 IN A 185.199.111.153
+@ 3600 IN MX 10 west.smtp.mx.exch081.serverdata.net.
+@ 3600 IN MX 5 east.smtp.mx.exch081.serverdata.net.
+@ 3600 IN TXT "google-site-verification=gQF86nSb9PCBbSAVEY6nIE8ru20NeQUQTSr5YXXZdEw"
+@ 3600 IN TXT "google-site-verification=mP-5QJcmiwsgDESIonNerB1TiqpF3Tu48ZeBrPFINW4"
+@ 3600 IN TXT "v=spf1 +a +mx +ip4:67.225.226.91 include:spf.intermedia.net ~all"
+_2db67666e651ccc3702a24f5e971cb16 300 IN CNAME _d9a22fe3c2e662d902fd36bdf6f3f0df.bbfvkzsszw.acm-validations.aws.
+_3bb0bf89f31ba0d13b18e9f294ac85b7.home 300 IN CNAME _5884ad51f13df70cba41da870ef532f6.bbfvkzsszw.acm-validations.aws.
+autodiscover 3600 IN CNAME ar-east.exch081.serverdata.net.
+default._domainkey 300 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5L3gg3GYDK153zEHx8PMxSw0OLbcSBLE2YmbkQF+IqTD7XrpcWUtFvcyob9JAVZ2fNU6WtkazH9DwWxORzplnXWb" "Qe52J9nYenv++8ck98bVoFUX1rfFB5/WsTo/oCTJu0pS7jHuXhmot1peA8yNvJs5l6oy5IlzFfoAKF5XaeqhnECsVZksdVujqlsoALwz6Ud3w2BT+aWYBTk1tlaq5Z1MoRtzu637nIVMobX8EI/VNU" "CXFR+C+HAc4dqrxEx7MazhLad3EQrqmyZpSoy07Uo5A69ClneQGb0N65YrOIPrHmFrDYqF7aoIpsrS8d3cXIIGWSFHynY6YTD4VWI0mQIDAQAB;"
+default._domainkey.home 300 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWzCPvHg3xrdVR69qAP6kDOBkaDRAMFWos/umBes4oi7KMmL9Ux3h7hiyYEHuCs/yUan0gn9V/Eby5evQjsnH15v" "cFBePl0UL+KzxkfUM9FqGt5N4i/Lxpu8se2XzJqfmkmesl5g2si3PWxKg1VRXppRXRTolGyhrcp6N/Gjydr852HZQdHkQQiZXTWebIAwIW8N5L13uHuPosuigI5YT1EgZUiBGsGJD+4qZHEJuW2sUR" "Lpnk7kE1UEwUIl5Z/32GyodzoEMlJQfe5plfO6Z2XVDUyi5WgmS8MCj1kZ/7rlSnwkFzxasFdgiWPZm3C9FLekZo26Xb17oigdWXVO+QIDAQAB;"
+default._domainkey.legaltheater 300 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlPNCJLgObG9tDsVoCfW3uiS/tRRjyTZrbzMBcFYZVgfcuxarsh78rqfF4Ss3ez5RH8/LYPqkGhiPKYCFlFblcGevsjHORK9udneQhzb0Ujcb8OPRRHKptwK/hm757TEo/" "oI3x3a9wx6C9Xx/cGqKzRwNH5rNg1cKnhhq8995JrlHwd/lIfBrt3r2RwxPNTZfHzdu7vZl7pUuuqhxfrncU0zJcTLj4Fe1GfHJW1ryVkuB3jS7RKb8c+0bV6yzimj613X9wHCu4EFn7sS/TNw9gLuqXNimUeBkO4UBEznoLiGZvoHGOF0X7dM3jCP/0urEu2Wd/cMPRrEbzBIBDNpZ7wIDAQAB;"
+default._domainkey.profundobono 300 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxpYWdVoXIA9q19CrVJYzY8YVdPJv9uNgpf3z5nh0x0cVM65Bp9aS9/i1dXgE2arXpLhni0jt1/QcI1vAfUVDW4w1v0RNPvtC7RJWG75ktelWuwo7IOJW0HW1tDTN35/bF/r5HL+8mzBViuRqppwZWvJxciQoYf0PgZ0JYe/8" "QSpfjEWN3zj2DhCWXbTpLUwaeWyG4wuqKES1okS0WubCx7Y+KJmmdojZq4G/GGhCzE61/8AcsZbx+hMa69a6KSmw5fEJsvRUWIiHf7whYDG7WYqhHhRdWXjmIGdhwRqbjhPnkdOzyK9Xp1HPn7rPuU8QB/d/wpP5kZEzZoEbxJn83QIDAQAB;"
+home 10800 IN CNAME webredir.gandi.net.
+legaltheater 10800 IN CNAME webredir.gandi.net.
+profundobono 10800 IN CNAME webredir.gandi.net.
+remote 300 IN A 23.141.160.122
+www 3600 IN CNAME megastep.github.io.
+www.home 10800 IN CNAME webredir.gandi.net.
