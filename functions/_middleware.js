@@ -31,7 +31,6 @@ function withVaryAccept(response) {
 function markdownResponse(asset, method) {
   const headers = new Headers(asset.headers);
   headers.set("Content-Type", MARKDOWN_MIME_TYPE);
-  headers.set("x-markdown-tokens", String(Math.ceil((headers.get("Content-Length") || 0) / 4)));
   return withVaryAccept(new Response(method === "HEAD" ? null : asset.body, { status: asset.status, statusText: asset.statusText, headers }));
 }
 

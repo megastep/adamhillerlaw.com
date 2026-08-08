@@ -127,8 +127,8 @@ HTML. To verify a production deployment:
 curl -i https://adamhillerlaw.com/about -H 'Accept: text/markdown'
 ```
 
-The response should have `Content-Type: text/markdown; charset=utf-8`,
-`Vary: Accept`, and `x-markdown-tokens`. Locally, run
+The response should have `Content-Type: text/markdown; charset=utf-8` and
+`Vary: Accept`. Locally, run
 `bundle exec jekyll build --config _config.yml,_config_prod.yml` followed by
 `ruby scripts/check_agent_markdown.rb _site` to verify every rendered HTML page
 has a Markdown companion.
