@@ -116,6 +116,23 @@ For bug reports, follow the provided template.
 
 To set up your environment to develop this theme, [clone this repo](https://github.com/raviriley/agency-jekyll-theme.git), then run `bundle install`. To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
+### Markdown for agents
+
+The Jekyll build generates clean Markdown companions in `_site/__markdown/`.
+Cloudflare Pages middleware serves them only when a client explicitly requests
+them with `Accept: text/markdown`; normal browser requests continue to receive
+HTML. To verify a production deployment:
+
+```sh
+curl -i https://adamhillerlaw.com/about -H 'Accept: text/markdown'
+```
+
+The response should have `Content-Type: text/markdown; charset=utf-8` and
+`Vary: Accept`. Locally, run
+`bundle exec jekyll build --config _config.yml,_config_prod.yml` followed by
+`ruby scripts/check_agent_markdown.rb _site` to verify every rendered HTML page
+has a Markdown companion.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
