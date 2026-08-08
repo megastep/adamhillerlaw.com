@@ -13,7 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="{{ site.description }}" />
   <meta name="author" content="{{ site.author }}" />
-  <meta property="og:image" content="{{ site.url }}{{ site.imgprefix }}{{ site.logo }}" />
 
   <meta name="DC.title" content="{{ site.title }}" />
   <meta name="geo.region" content="{{ site.geoloc.region }}" />
@@ -48,5 +47,10 @@
   <link href="/assets/css/agency.css" rel="stylesheet" />
   
   {% seo %}
+  <meta property="og:image" content="{{ site.url }}{{ site.imgprefix }}{{ site.social_image }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.imgprefix }}{{ site.social_image }}" />
   {% include jsonld.html %}
 </head>

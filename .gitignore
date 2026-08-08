@@ -1,9 +1,9 @@
 *.gem
 .bundle
-vendor/bundle
 .sass-cache
 .jekyll-cache
 .ruby-version
 _site
 unused
 bootstrap-reference.html
+vendor/
