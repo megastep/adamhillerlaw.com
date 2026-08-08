@@ -10,9 +10,11 @@ function acceptsMarkdown(accept) {
   });
 }
 
-function markdownPathFor(pathname) {
-  const path = pathname.endsWith("/") ? `${pathname}index` : pathname.replace(/\.html$/, "");
-  return `/__markdown${path}.md`;
+function markdownPathsFor(pathname) {
+  const path = pathname.replace(/\.html$/, "").replace(/\/$/, "") || "/";
+  const pagePath = `/__markdown${path === "/" ? "/index" : path}.md`;
+  const directoryPath = `/__markdown${path === "/" ? "/index" : `${path}/index`}.md`;
+  return pagePath === directoryPath ? [pagePath] : [pagePath, directoryPath];
 }
 
 function withVaryAccept(response) {
@@ -29,12 +31,7 @@ function withVaryAccept(response) {
 function markdownResponse(asset, method) {
   const headers = new Headers(asset.headers);
   headers.set("Content-Type", MARKDOWN_MIME_TYPE);
-  headers.delete("Content-Encoding");
-  headers.delete("Content-Range");
-  headers.delete("ETag");
-  headers.delete("Last-Modified");
   headers.set("x-markdown-tokens", String(Math.ceil((headers.get("Content-Length") || 0) / 4)));
-  headers.delete("Content-Length");
   return withVaryAccept(new Response(method === "HEAD" ? null : asset.body, { status: asset.status, statusText: asset.statusText, headers }));
 }
 
@@ -45,8 +42,11 @@ export async function onRequest(context) {
     return withVaryAccept(await context.next());
   }
 
-  const markdownUrl = new URL(request.url);
-  markdownUrl.pathname = markdownPathFor(markdownUrl.pathname);
-  const asset = await env.ASSETS.fetch(new Request(markdownUrl, { method }));
-  return asset.ok ? markdownResponse(asset, method) : withVaryAccept(await context.next());
+  for (const markdownPath of markdownPathsFor(new URL(request.url).pathname)) {
+    const markdownUrl = new URL(request.url);
+    markdownUrl.pathname = markdownPath;
+    const asset = await env.ASSETS.fetch(new Request(markdownUrl, { method }));
+    if (asset.ok) return markdownResponse(asset, method);
+  }
+  return withVaryAccept(await context.next());
 }
