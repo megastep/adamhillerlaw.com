@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Links For Legal Practitioners
+description: "Links for Delaware legal practitioners to court websites, electronic filing, statutes, rules, government agencies, and legal organizations."
 background: grey
 permalink: /links
 ---

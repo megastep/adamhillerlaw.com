@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: "Hiller Law’s website privacy policy explains the collection and use of device information, cookies, and Google Analytics, with contact information."
 background: grey
 permalink: /privacy
 ---
