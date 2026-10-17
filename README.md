@@ -133,6 +133,12 @@ The response should have `Content-Type: text/markdown; charset=utf-8` and
 `ruby scripts/check_agent_markdown.rb _site` to verify every rendered HTML page
 has a Markdown companion.
 
+After the same production build, run `bundle exec ruby scripts/check_metadata.rb _site`
+to check description counts across all generated HTML, page-specific summaries,
+the site-description fallback, canonical URLs, social descriptions, and structured
+data. Edit page descriptions in their Markdown front matter; pages without one
+use the site description from `_config.yml` through `jekyll-seo-tag`.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
