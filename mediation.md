@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mediation
+description: "Information about Adam Hiller’s mediation services for bankruptcy litigation, commercial contract disputes, and other civil litigation."
 background: grey
 permalink: /mediation
 redirect_from:

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Community Involvement
+description: "Community organizations supported by Hiller Law through donations, administrative services, and Adam Hiller’s volunteer work."
 background: grey
 permalink: /community
 ---

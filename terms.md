@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms Of Service
+description: "Terms for using Hiller Law’s website, including its informational purpose, confidentiality limits, and requirements for an attorney-client relationship."
 background: grey
 permalink: /terms
 ---

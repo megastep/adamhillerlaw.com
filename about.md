@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Adam Hiller And The Firm
+description: "Learn about Adam Hiller, his legal background, and Hiller Law’s bankruptcy, insolvency, and commercial litigation practice."
 background: grey
 permalink: /about
 redirect_from:
